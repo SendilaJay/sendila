@@ -291,27 +291,40 @@ text-decoration:none;
 /* NAVBAR */
 nav{
 flex-direction:column;
-gap:10px;
+gap:12px;
 padding:15px 6%;
 }
 
 nav ul{
 display:grid;
-grid-template-columns:repeat(3,1fr); /* 3 items per row */
-gap:10px;
+grid-template-columns:repeat(2,1fr); /* 2 items per row */
+gap:8px;
 width:100%;
+list-style:none;
+}
+
+nav li{
 text-align:center;
 }
 
 nav a{
 display:block;
-font-size:14px;
-padding:6px 0;
+font-size:15px;
+padding:8px 0;
+border-radius:6px;
+transition:0.3s;
 }
 
-/* HERO FIX */
+/* NAV HOVER EFFECT */
+nav a:hover{
+background:rgba(168,85,247,0.15);
+color:#a855f7;
+transform:scale(1.05);
+}
+
+/* HERO */
 .hero{
-padding-top:160px; /* prevent navbar overlap */
+padding-top:170px;
 flex-direction:column;
 text-align:center;
 gap:40px;
@@ -330,35 +343,35 @@ width:240px;
 height:240px;
 }
 
+/* ABOUT */
+.about-container{
+flex-direction:column;
+text-align:center;
+}
 
-  /* ABOUT */
-  .about-container{
-    flex-direction:column;
-    text-align:center;
-  }
+.about-image img{
+width:220px;
+height:220px;
+}
 
-  .about-image img{
-    width:220px;
-    height:220px;
-  }
+/* SKILLS */
+.skills{
+grid-template-columns:repeat(2,1fr);
+}
 
-  /* SKILLS */
-  .skills{
-    grid-template-columns:repeat(2,1fr);
-  }
+/* PROJECTS */
+.projects{
+grid-template-columns:1fr;
+}
 
-  /* PROJECTS */
-  .projects{
-    grid-template-columns:1fr;
-  }
+section{
+padding:80px 6%;
+}
 
-  section{
-    padding:80px 6%;
-  }
+/* CONTACT */
+.contact-wrapper{
+flex-direction:column;
+align-items:center;
+}
 
-  /* CONTACT */
-  .contact-wrapper{
-    flex-direction:column;
-    align-items:center;
-  }
 }
