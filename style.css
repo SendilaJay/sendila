@@ -286,85 +286,96 @@ section{
   text-decoration:none;
 }
 
-/* ================= MOBILE ================= */
-
 @media (max-width:768px){
 
-nav{
-  flex-direction:column;
-  gap:15px;
-  padding:20px;
+  /* NAVBAR */
+  nav{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+    background: rgba(5,5,16,0.95); /* ensure it’s visible */
+    align-items:center;
+  }
+
+  nav ul{
+    display:flex; /* always visible */
+    flex-direction:column;
+    gap:18px;
+    justify-content:center;
+    width:100%;
+  }
+
+  nav ul li{
+    text-align:center;
+    width:100%;
+  }
+
+  nav a{
+    font-size:16px;
+    padding:10px 0;
+    display:block;
+  }
+
+  /* HERO */
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding:140px 8% 0 8%;
+    gap:40px;
+  }
+
+  .hero-text h1{
+    font-size:40px;
+  }
+
+  .hero-text h2{
+    font-size:22px;
+  }
+
+  .hero-text p{
+    font-size:14px;
+  }
+
+  .hero-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .hero-image img{
+    width:250px;
+    height:250px;
+  }
+
+  /* ABOUT */
+  .about-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .about-image img{
+    width:220px;
+    height:220px;
+  }
+
+  /* SKILLS */
+  .skills{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  /* PROJECTS */
+  .projects{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:80px 6%;
+  }
+
+  /* CONTACT */
+  .contact-wrapper{
+    flex-direction:column;
+    align-items:center;
+  }
 }
-
-
-nav ul{
-  gap:18px;
-  font-size:14px;
-  flex-wrap:wrap;
-  justify-content:center;
-  display:flex;
-  flex-direction:column;
-}
-
-nav ul.active{
-  display:flex;
-}
-
-.hero{
-  flex-direction:column;
-  text-align:center;
-  padding:140px 8% 0 8%;
-  gap:40px;
-}
-
-.hero-text h1{
-  font-size:40px;
-}
-
-.hero-text h2{
-  font-size:22px;
-}
-
-.hero-text p{
-  font-size:14px;
-}
-
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.hero-image img{
-  width:250px;
-  height:250px;
-}
-
-.about-container{
-  flex-direction:column;
-  text-align:center;
-}
-
-.about-image img{
-  width:220px;
-  height:220px;
-}
-
-.skills{
-  grid-template-columns:repeat(2,1fr);
-}
-
-.projects{
-  grid-template-columns:1fr;
-}
-
-section{
-  padding:80px 6%;
-}
-
-.contact-wrapper{
-  flex-direction:column;
-  align-items:center;
-}
-
