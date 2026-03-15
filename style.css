@@ -288,23 +288,19 @@ text-decoration:none;
 
 @media (max-width:768px){
 
-  /* NAVBAR */
-  nav{
+   nav{
     flex-direction:column;
-    gap:15px;
-    padding:20px;
-    background: rgba(5,5,16,0.95); /* slightly more visible */
-    align-items:center;
+    gap:10px;
+    padding:15px 5%;
   }
 
   nav ul{
-    display:flex;          /* always show menu */
-    flex-direction: row;   /* horizontal layout */
-    flex-wrap: wrap;       /* wrap to next line if needed */
-    gap:18px;              /* spacing between items */
     justify-content:center;
-    width:100%;
+    flex-wrap:wrap;
+    gap:15px;
   }
+
+}
 
   nav ul li{
     text-align:center;
