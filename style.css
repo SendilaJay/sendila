@@ -288,60 +288,47 @@ text-decoration:none;
 
 @media (max-width:768px){
 
-  /* NAVBAR */
-  nav{
-    flex-direction:row;          /* keep logo + menu in row */
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 6%;
-  }
-
-  nav ul{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;              /* allows wrapping */
-    justify-content:center;
-    gap:12px;
-  }
-
-  nav a{
-    font-size:14px;
-    padding:6px 8px;
-  }
-
+/* NAVBAR */
+nav{
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+padding:15px 6%;
 }
 
-  /* HERO */
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    padding:140px 8% 0 8%;
-    gap:40px;
-  }
+nav ul{
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
 
-  .hero-text h1{
-    font-size:40px;
-  }
+nav a{
+font-size:14px;
+}
 
-  .hero-text h2{
-    font-size:22px;
-  }
+/* HERO FIX */
+.hero{
+padding-top:160px; /* prevent navbar overlap */
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
 
-  .hero-text p{
-    font-size:14px;
-  }
+.hero-text h1{
+font-size:38px;
+}
 
-  .hero-buttons{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
-  }
+.hero-text p{
+font-size:14px;
+}
 
-  .hero-image img{
-    width:250px;
-    height:250px;
-  }
+.hero-image img{
+width:240px;
+height:240px;
+}
+
 
   /* ABOUT */
   .about-container{
