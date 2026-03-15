@@ -69,13 +69,7 @@ nav a:hover{
   color:#a855f7;
 }
 
-/* HAMBURGER MENU */
 
-.menu-toggle{
-  display:none;
-  font-size:22px;
-  cursor:pointer;
-}
 
 /* HERO */
 
@@ -374,4 +368,3 @@ section{
   align-items:center;
 }
 
-}
