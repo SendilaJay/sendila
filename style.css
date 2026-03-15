@@ -288,31 +288,30 @@ section{
 
 @media (max-width:768px){
 
-  /* NAVBAR */
   nav{
     flex-direction:column;
     gap:15px;
     padding:20px;
-    background: rgba(5,5,16,0.95); /* ensure it’s visible */
+    background: rgba(5,5,16,0.95);
     align-items:center;
   }
 
   nav ul{
-    display:flex; /* always visible */
-    flex-direction:column;
-    gap:18px;
+    display:flex;          /* keep flex */
+    flex-direction: row;   /* horizontal layout */
+    flex-wrap: wrap;       /* wrap to next line if needed */
+    gap:18px;              /* spacing between items */
     justify-content:center;
     width:100%;
   }
 
   nav ul li{
     text-align:center;
-    width:100%;
   }
 
   nav a{
     font-size:16px;
-    padding:10px 0;
+    padding:10px 15px;    /* spacing around links */
     display:block;
   }
 
