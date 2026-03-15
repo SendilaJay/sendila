@@ -52,11 +52,12 @@ nav a:hover{
 }
 
 .hero{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  height:100vh;
-  padding:0 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:100vh;
+padding:0 10%;
+gap:40px;
 }
 
 .hero-text h1{
@@ -100,16 +101,17 @@ nav a:hover{
 
 .hero-image{
 display:flex;
-justify-content:center;
-align-items:center;
+justify-content:flex-end;
+align-items:flex-end;
+height:100%;
 }
 
 .hero-image img{
-width:350px;
-height:450px;
-object-fit:cover;
-border-radius:20px;
-box-shadow:0 20px 60px rgba(168,85,247,0.5);
+height:80vh;
+max-height:700px;
+width:auto;
+object-fit:contain;
+filter:drop-shadow(0 20px 40px rgba(168,85,247,0.6));
 transition:0.4s;
 }
 
