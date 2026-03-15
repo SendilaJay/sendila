@@ -288,75 +288,94 @@ text-decoration:none;
 
 @media (max-width:768px){
 
-nav{
-flex-direction:column;
-gap:15px;
-padding:20px;
-}
+  /* NAVBAR */
+  nav{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+    background: rgba(5,5,16,0.95); /* slightly more visible */
+    align-items:center;
+  }
 
-nav ul{
-gap:18px;
-font-size:14px;
-flex-wrap:wrap;
-justify-content:center;
-}
+  nav ul{
+    display:flex;          /* always show menu */
+    flex-direction: row;   /* horizontal layout */
+    flex-wrap: wrap;       /* wrap to next line if needed */
+    gap:18px;              /* spacing between items */
+    justify-content:center;
+    width:100%;
+  }
 
-.hero{
-flex-direction:column;
-text-align:center;
-padding:140px 8% 0 8%;
-gap:40px;
-}
+  nav ul li{
+    text-align:center;
+  }
 
-.hero-text h1{
-font-size:40px;
-}
+  nav a{
+    font-size:16px;
+    padding:10px 15px;    /* spacing around links */
+    display:block;
+  }
 
-.hero-text h2{
-font-size:22px;
-}
+  /* HERO */
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding:140px 8% 0 8%;
+    gap:40px;
+  }
 
-.hero-text p{
-font-size:14px;
-}
+  .hero-text h1{
+    font-size:40px;
+  }
 
-.hero-buttons{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px;
-}
+  .hero-text h2{
+    font-size:22px;
+  }
 
-.hero-image img{
-width:250px;
-height:250px;
-}
+  .hero-text p{
+    font-size:14px;
+  }
 
-.about-container{
-flex-direction:column;
-text-align:center;
-}
+  .hero-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+  }
 
-.about-image img{
-width:220px;
-height:220px;
-}
+  .hero-image img{
+    width:250px;
+    height:250px;
+  }
 
-.skills{
-grid-template-columns:repeat(2,1fr);
-}
+  /* ABOUT */
+  .about-container{
+    flex-direction:column;
+    text-align:center;
+  }
 
-.projects{
-grid-template-columns:1fr;
-}
+  .about-image img{
+    width:220px;
+    height:220px;
+  }
 
-section{
-padding:80px 6%;
-}
+  /* SKILLS */
+  .skills{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-.contact-wrapper{
-flex-direction:column;
-align-items:center;
-}
+  /* PROJECTS */
+  .projects{
+    grid-template-columns:1fr;
+  }
 
+  section{
+    padding:80px 6%;
+  }
+
+  /* CONTACT */
+  .contact-wrapper{
+    flex-direction:column;
+    align-items:center;
+  }
 }
