@@ -288,29 +288,28 @@ text-decoration:none;
 
 @media (max-width:768px){
 
-   nav{
-    flex-direction:column;
-    gap:10px;
-    padding:15px 5%;
+  /* NAVBAR */
+  nav{
+    flex-direction:row;          /* keep logo + menu in row */
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 6%;
   }
 
   nav ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;              /* allows wrapping */
     justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-  }
-
-}
-
-  nav ul li{
-    text-align:center;
+    gap:12px;
   }
 
   nav a{
-    font-size:16px;
-    padding:10px 15px;    /* spacing around links */
-    display:block;
+    font-size:14px;
+    padding:6px 8px;
   }
+
+}
 
   /* HERO */
   .hero{
