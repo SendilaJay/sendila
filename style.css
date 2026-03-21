@@ -290,39 +290,19 @@ text-decoration:none;
 
 /* NAVBAR */
 nav{
-flex-direction:column;
-gap:12px;
-padding:15px 6%;
+flex-direction:row;
+padding:12px 6%;
 }
 
 nav ul{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:8px;
-width:100%;
-}
-
-nav li{
-text-align:center;
-}
-
-/* FIX CONTACT POSITION */
-nav li:last-child{
-grid-column:span 2;
+display:flex;
+gap:12px;
+white-space:nowrap;
 }
 
 nav a{
-display:block;
-font-size:15px;
-padding:8px 0;
-border-radius:6px;
-transition:0.3s;
-}
-
-nav a:hover{
-background:rgba(168,85,247,0.15);
-color:#a855f7;
-transform:scale(1.05);
+font-size:13px;
+padding:6px 4px;
 }
 
 /* HERO */
